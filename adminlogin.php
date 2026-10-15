@@ -1,0 +1,10 @@
+<?php session_start(); ?>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin login — INFO</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head>
+<body class="form-page"><header class="site-header page-shell"><a class="brand" href="MainPage.html" aria-label="INFO home">INFO<span class="brand-dot">.</span></a><nav class="site-nav" aria-label="Main navigation"><a href="MainPage.html">Back to site</a></nav></header>
+  <main class="form-layout page-shell"><aside class="form-aside"><p class="eyebrow">INFO / STUDIO</p><h1>Behind<br><em>the scenes.</em></h1><p>Staff access to incoming sign requests.</p><div class="aside-graphic" aria-hidden="true"><div class="aside-note">GOOD<br>THINGS<br>AHEAD <span>✳</span></div></div></aside><section class="form-panel" aria-labelledby="admin-title"><p class="eyebrow">STAFF ACCESS / 01</p><h2 id="admin-title">Admin login</h2><p class="form-subtitle">Enter your staff credentials to view orders.</p>
+  <?php if (isset($_SESSION['error'])): ?><p class="form-error" role="alert"><?php echo htmlspecialchars($_SESSION['error'], ENT_QUOTES, 'UTF-8'); unset($_SESSION['error']); ?></p><?php endif; ?>
+  <form method="post" action="loginprocessadmin.php"><div class="field"><label for="admin_id">Admin ID <span>*</span></label><input id="admin_id" type="text" name="admin_id" autocomplete="username" required></div><div class="field"><label for="password">Password <span>*</span></label><input id="password" type="password" name="password" autocomplete="current-password" required></div><button class="button button-dark button-wide" type="submit">Log in <span aria-hidden="true">↗</span></button></form></section></main>
+  <footer class="site-footer page-shell"><a class="brand" href="MainPage.html">INFO<span class="brand-dot">.</span></a><span>Custom neon signs for every space.</span><small>© INFO 2026</small></footer>
+</body></html>
