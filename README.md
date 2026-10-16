@@ -4,7 +4,9 @@ INFO is a small PHP/MySQL prototype for requesting custom neon signs. Customers 
 
 This version builds on the original [INFO repository](https://github.com/LordGibrat/INFO) with a redesigned customer experience and neon sign preview.
 
-Preview: [landing page](docs/home.png) · [order page](docs/order.png)
+![INFO Neon landing page](docs/home.png)
+
+[View the order page](docs/order.png) · [Run locally](#local-setup) · [Original project](https://github.com/LordGibrat/INFO)
 
 ## Version 2 interface
 
